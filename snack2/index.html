@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack 2</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css'
+        integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=='
+        crossorigin='anonymous' />
+</head>
+
+<body>
+    <div class="container-sm vh-100 d-flex flex-column justify-content-center align-items-center ">
+
+        <form action="php/index.php" method="get">
+            <div class="row row-cols-1 row-gap-4 mb-4">
+
+                <div class="col">
+                    <label class="me-3 " for="name">Inserisci nome</label>
+                    <input type="text" name="name" id="name" placeholder="nome...">
+                </div>
+                <div class="col">
+                    <label class="me-3 " for="email">Inserisci email</label>
+                    <input type="email" name="email" id="email" placeholder="email...">
+                </div>
+                <div class="col">
+                    <label class="me-3 " for="name">Inserisci età</label>
+                    <input type="number" name="age" id="age">
+                </div>
+            </div>
+            <button type="submit">Invia</button>
+            <button type="reset">Annulla</button>
+        </form>
+    </div>
+</body>
+
+</html>

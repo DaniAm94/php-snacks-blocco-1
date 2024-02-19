@@ -1,11 +1,11 @@
 <?php 
-$name = $_GET['name'] ?? '';
-$email = $_GET['email'] ?? '';
+$name = $_GET['name'] ?? 'nobody';
+$email = $_GET['email'] ?? 'nobody@gmail.com';
 $age = $_GET['age'] ?? '0';
 
 $invalid_name = 'Il nome deve essere lungo almeno 4 caratteri!';
 $invalid_email = 'Il formato dell\'email non è valido (Caratteri previsti: @ , .)!';
-$invalid_age = 'Il valore dell\'età può contenere solo numeri!';
+$invalid_age = 'Valore dell\'età non consentito!';
 
 $is_valid= true;
 $color = 'text-danger';
@@ -28,8 +28,6 @@ if($is_valid){
     $message= 'Accesso riuscito';
     $color= 'text-success';
 } 
-
-
 
 ?>
 

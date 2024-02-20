@@ -11,7 +11,7 @@ $is_valid= true;
 $color = 'text-danger';
 $message='Accesso negato! ';
 
-if(strlen($name)<4){
+if(mb_strlen(trim($name))<4){
     $is_valid=false;
     $message .= " $invalid_name";
 }
@@ -19,7 +19,7 @@ if(!str_contains($email, '@') || !str_contains($email, '.')) {
     $is_valid= false;
     $message .= " $invalid_email";
 }
-if(!is_numeric($age)){
+if(!is_numeric($age) || $age <= 0){
     $is_valid= false;
     $message .= " $invalid_age";
 }
